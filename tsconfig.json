@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "lib": ["ES2020", "DOM"],
+    "module": "ES6",
+    "moduleResolution": "Node",
+    "outDir": "lib",
+    "target": "ES2015"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
