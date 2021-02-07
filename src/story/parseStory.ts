@@ -106,7 +106,7 @@ export default async function parseStory(
     resultMeta.description = descriptionElement.textContent.trim();
   }
   resultMeta.chapters = chapterElement
-    ? parseChapters(resultMeta.id, chapterElement)
+    ? parseChapters(chapterElement)
     : [
         {
           id: 1,
@@ -119,7 +119,7 @@ export default async function parseStory(
   return resultMeta;
 }
 
-function parseTags(
+export function parseTags(
   tagsElement: Element,
   genres: string[],
   createTemplate: () => HTMLTemplateElement
@@ -208,21 +208,25 @@ function parseTags(
         result.favorites = +tagValue.replace(/,/g, "");
         break;
       case "reviews":
-        const tempReviewsElement = createTemplate();
-        tempReviewsElement.innerHTML = tagValue;
-        if (tempReviewsElement.content.firstElementChild) {
-          const element = tempReviewsElement.content
-            .firstElementChild as HTMLElement;
-          if (element.textContent) {
-            result.reviews = +element.textContent.replace(/,/g, "");
+        if (tagValue.includes("<a")) {
+          const tempReviewsElement = createTemplate();
+          tempReviewsElement.innerHTML = tagValue;
+          if (tempReviewsElement.content.firstElementChild) {
+            const element = tempReviewsElement.content
+              .firstElementChild as HTMLElement;
+            if (element.textContent) {
+              result.reviews = +element.textContent.replace(/,/g, "");
+            } else {
+              result.reviews = 0;
+            }
           } else {
-            result.reviews = 0;
+            result.reviews =
+              (tempReviewsElement.textContent &&
+                +tempReviewsElement.textContent) ||
+              0;
           }
         } else {
-          result.reviews =
-            (tempReviewsElement.textContent &&
-              +tempReviewsElement.textContent) ||
-            0;
+          result.reviews = +tagValue.replace(/,/g, "");
         }
         break;
       case "published":
@@ -252,7 +256,7 @@ function parseTags(
   return result;
 }
 
-function parseCharacters(tag: string): string[][] {
+export function parseCharacters(tag: string): string[][] {
   const result = [];
   const pairings = tag
     .trim()
@@ -284,7 +288,7 @@ function parseCharacters(tag: string): string[][] {
   return result;
 }
 
-function parseChapters(storyId: number, selectElement: ParentNode): Chapter[] {
+export function parseChapters(selectElement: ParentNode): Chapter[] {
   const result: Chapter[] = [];
 
   for (let i = 0; i < selectElement.children.length; i++) {

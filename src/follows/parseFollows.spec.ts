@@ -575,4 +575,11 @@ describe("parseFollows", function () {
       },
     ]);
   });
+
+  it("should parse story list", async function () {
+    const fragment = await loadTestCase("06-hp-naruto-crossovers.html");
+    const parsed = await parseFollows(fragment);
+
+    expect(parsed).toBeUndefined();
+  });
 });

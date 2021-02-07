@@ -812,4 +812,102 @@ describe("parseStory", function () {
 
     expect(parsed).toBeUndefined();
   });
+
+  it("should parse story list", async function () {
+    const fragment = await loadTestCase("06-hp-naruto-crossovers.html");
+    const parsed = await parseStory(fragment);
+
+    expect(parsed).toBeUndefined();
+  });
+
+  it("should parse crossover story", async function () {
+    const fragment = await loadTestCase("08-finding-home.html");
+    const parsed = await parseStory(fragment);
+
+    expect(parsed).toStrictEqual({
+      id: 8148717,
+      title: "Finding Home",
+      author: {
+        id: 2042977,
+        name: "cywsaphyre",
+      },
+      description:
+        "When Harry finally accepted the fact that he had stopped aging, ten years had passed and he knew it was time to leave. AU.",
+      chapters: [
+        {
+          id: 1,
+          title: "To Begin Anew",
+        },
+        {
+          id: 2,
+          title: "To Be A Friend",
+        },
+        {
+          id: 3,
+          title: "To Start A War",
+        },
+        {
+          id: 4,
+          title: "To First Meetings",
+        },
+        {
+          id: 5,
+          title: "To Friends, Enemies, and InBetweens",
+        },
+        {
+          id: 6,
+          title: "To Trust",
+        },
+        {
+          id: 7,
+          title: "To Revelations",
+        },
+        {
+          id: 8,
+          title: "To Merge Two Worlds",
+        },
+        {
+          id: 9,
+          title: "To Come Apart",
+        },
+        {
+          id: 10,
+          title: "To Separate",
+        },
+        {
+          id: 11,
+          title: "To Form an Alliance",
+        },
+        {
+          id: 12,
+          title: "To Stand Together",
+        },
+        {
+          id: 13,
+          title: "To When Winning Feels Like Losing",
+        },
+        {
+          id: 14,
+          title: "To Relax Or To Not Relax",
+        },
+        {
+          id: 15,
+          title: "To the Next Arc",
+        },
+      ],
+      imageUrl: "/image/2260423/180/",
+      favorites: 15566,
+      follows: 7715,
+      reviews: 2895,
+      genre: ["Adventure", "Friendship"],
+      characters: [["Harry P."]],
+      language: "English",
+      published: new Date("2012-05-25T07:55:52Z"),
+      updated: new Date("2013-02-19T02:11:21Z"),
+      rating: "T",
+      words: 61162,
+      universes: ["Harry Potter", "Avengers"],
+      status: "Complete",
+    });
+  });
 });
