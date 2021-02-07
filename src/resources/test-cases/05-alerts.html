@@ -1,0 +1,1136 @@
+<!DOCTYPE html><html><head>
+    <meta charset='utf-8'>
+    <META NAME='ROBOTS' CONTENT='NOARCHIVE'>
+    <META http-equiv='X-UA-Compatible' content='IE=edge'>
+    <META NAME='format-detection' content='telephone=no'>
+    <META NAME='apple-itunes-app' content='app-id=1192753879'>
+    <link href='//ff74.b-cdn.net' rel='preconnect'>
+    <link href='//adservice.google.com' rel='preconnect'>
+    <link href='//googleads.g.doubleclick.net' rel='preconnect'><meta name="google-site-verification" content="azVIufmnM70GVsbIzGiT1xm8Au0WPBFf0rtJ-puqSQM" /><META NAME='viewport' content='width=device-width'><title>FanFiction</title>
+    <link rel='shortcut icon' href='/static/images/favicon_2010_site.ico'>
+    <link rel='icon' type='image/png' href='/static/images/favicon_2010_site.png'>
+    <link rel='apple-touch-icon' href='/static/images/favicon_2010_iphone.png'>
+    <link rel='stylesheet' href='/static/styles/xss26.css?v=1.0.0'>
+    <script src='/static/scripts/combo5.js?v=1.0.0'></script>
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="/cors/fontello-f1bf7dee/css/fontello-ie7.css">
+    <script src='/static/scripts/json2.min.js'></script>
+    <![endif]-->
+    <script>
+        xcookie_read();
+        xfont_auto_loader();
+        if(XCOOKIE.gui_font != 'Open Sans') {
+            document.write('<style>body{font-family:"'+XCOOKIE.gui_font+'",Verdana, Arial;}</style>');
+        }
+    </script>
+    <script SRC='/static/scripts/jquery.validatefull.20130301.js?v=1.0.0'></script>
+    <script SRC='/static/scripts/secure_master20_min.js?v=1.0.0'></script>
+    <style>
+        .dropdown-menu > li > a { padding: 3px 50px 3px 30px; }
+        body { min-width:750px; height:100%; }
+        .maxwidth { min-width:730px;margin-left:auto;margin-right:auto;}
+
+
+
+    </style>
+    <script>
+        if(isAndroid && !isChrome) {
+            document.write('<style> body {font-size:1em;}</style>');
+        }
+    </script>
+    <script>
+
+        xauto_width_init();
+        xauto_fontsize();
+
+        if(!isIphone && !isIpad) {
+            $(function() {
+                $(window).resize(xauto_width);
+            });
+        }
+
+    </script></head><body style='background-color:#E4E3D5;margin-top:0px;'><script>xfont_fix_smooth();</script>
+<div id=top style='width:100%;background-color: #333399; '>
+    <div class='menulink maxwidth' style='padding:0.5em 10px 0.5em 10px; vertical-align:middle;'>
+        <script>
+            //init jquery
+            if (!window.jQuery) {
+                var jq = document.createElement('script'); jq.type = 'text/javascript';
+                jq.src = '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js';
+                document.getElementsByTagName('head')[0].appendChild(jq);
+                console.log('loading preq: jquery');
+            }
+
+
+            var _fp = {
+                logout : function() {
+                    $.get('/logout.php', function() {
+                        console.log('starting logout');
+                        var m = $('#_fp_modal_logged_out');
+                        if(!m.length) {
+                            $('body').append("<div id='_fp_modal_logged_out' data-backdrop='static' class='modal fade hide'><div class='modal-body'><div align=cener>You have successfully logged out. <span onClick='' type=button class='btn icon-edit-1'>Login</span> <span onClick='' type=button class='btn icon-edit-1'>Stay on this Page</span></div></div></div>");
+                            m = $('#_fp_modal_logged_out');
+                        }
+
+                        m.modal();
+
+                        console.log('modal finished');
+                        //xtoast('You have been logged out.');
+                        if(_fp.cb_loggedout) _fp.cb_loggedout();
+                        console.log('callback complete');
+                    })
+                        .fail(function() {
+                            //m.modal('hide');
+                            xtoast('An error has ocurred. Please try again later.');
+                        });
+                    //
+                }
+            };
+
+            //real function
+
+
+        </script>
+        <script>
+            function render_login(uname) {
+                var s = "<a href='/login.php?cache=bust' style='color:orange;'>"+uname+"</a> | <span id='' xonClick='_fp.logout();' onclick=\"location = '/logout.php';\" style='color:white;cursor: pointer;'>Logout</span>";
+                return s;
+            }
+
+        </script>
+        <span id=name_login class=pull-right>
+<script>
+if(XUNAME) {
+    document.write(render_login(XUNAME));
+}
+else {
+    document.write("<a href='/login.php?cache=bust' style='color:white;'><span class='icon-lock' style='font-size:15px;position:relative;top:1px'></span> Login</a> | <a href='/signup.php' style='color:white;'>Sign Up</a>");
+}
+</script></span><a href='/' style='font-size:1.1em;border:none;'>FanFiction</a>&#160;&#160;<small>|</small>&#160;&#160;unleash your imagination <span class='icon-kub-mobile' style='font-size:14px;margin-left:10px;' title='Mobile Edition' onclick="location = '//m.fanfiction.net'"></span><span title='Fontastic Panel: UI Settings' class='icon-tl-text' style='font-size:14px;margin-left:10px;' onClick="_fontastic_init('ui'); $('#_fontastic_ui').modal('show');"></span></div>
+</div>
+<div style='width:100%;' class=zmenu>
+    <div id=zmenu class='maxwidth' style='vertical-align:middle;padding:5px;'>
+<span class=zui>
+
+<table class='maxwidth'><tr><td valign=middle>
+<div class='dropdown xmenu_item'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>Browse <b class='caret'></b></a>
+<ul class='dropdown-menu'>
+<li class=disabled style='text-align:center'><a href='#'>Stories</a></li>
+<li><a href='/anime/'>Anime</a></li>
+<li><a href='/book/'>Books</a></li>
+<li><a href='/cartoon/'>Cartoons</a></li>
+<li><a href='/comic/'>Comics</a></li>
+<li><a href='/game/'>Games</a></li>
+<li><a href='/misc/'>Misc</a></li>
+<li><a href='/play/'>Plays</a></li>
+<li><a href='/movie/'>Movies</a></li>
+<li><a href='/tv/'>TV</a></li>
+<li class='disabled' style='text-align:center'><a href='#'>Crossovers</a></li>
+<li><a href='/crossovers/anime/'>Anime</a></li>
+<li><a href='/crossovers/book/'>Books</a></li>
+<li><a href='/crossovers/cartoon/'>Cartoons</a></li>
+<li><a href='/crossovers/comic/'>Comics</a></li>
+<li><a href='/crossovers/game/'>Games</a></li>
+<li><a href='/crossovers/misc/'>Misc</a></li>
+<li><a href='/crossovers/play/'>Plays</a></li>
+<li><a href='/crossovers/movie/'>Movies</a></li>
+<li><a href='/crossovers/tv/'>TV</a></li>
+</ul>
+</div>
+<div class='dropdown xmenu_item'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>Just In <b class='caret'></b></a>
+<ul class='dropdown-menu'>
+<li><a href='/j/0/0/0/'>All</a></li>
+<li><a href='/j/0/1/0/'>Stories: New</a><li>
+<li><a href='/j/0/2/0/'>Stories: Updated</a></li>
+<li class='divider'></li>
+<li><a href='/j/0/3/0/'>Crossovers: New</a><li>
+<li><a href='/j/0/4/0/'>Crossovers: Updated</a><li>
+</ul>
+</div>
+<div class='dropdown xmenu_item'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>Community <b class='caret'></b></a>
+<ul class='dropdown-menu'>
+<li><a href='/communities/general/0/'>General</a></li>
+<li><a href='/communities/anime/'>Anime</a></li>
+<li><a href='/communities/book/'>Books</a></li>
+<li><a href='/communities/cartoon/'>Cartoons</a></li>
+<li><a href='/communities/comic/'>Comics</a></li>
+<li><a href='/communities/game/'>Games</a></li>
+<li><a href='/communities/misc/'>Misc</a></li>
+<li><a href='/communities/movie/'>Movies</a></li>
+<li><a href='/communities/play/'>Plays</a></li>
+<li><a href='/communities/tv/'>TV</a></li>
+</ul>
+</div>
+<div class='dropdown xmenu_item'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>Forum <b class='caret'></b></a>
+<ul class='dropdown-menu'>
+<li><a href='/forums/general/0/'>General</a></li>
+<li><a href='/forums/anime/'>Anime</a></li>
+<li><a href='/forums/book/'>Books</a></li>
+<li><a href='/forums/cartoon/'>Cartoons</a></li>
+<li><a href='/forums/comic/'>Comics</a></li>
+<li><a href='/forums/game/'>Games</a></li>
+<li><a href='/forums/misc/'>Misc</a></li>
+<li><a href='/forums/movie/'>Movies</a></li>
+<li><a href='/forums/play/'>Plays</a></li>
+<li><a href='/forums/tv/'>TV</a></li> </ul>
+</div>
+<div class='dropdown xmenu_item'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>Betas <b class='caret'></b></a>
+<ul class='dropdown-menu'>
+<li class=disabled style='text-align:center'><a href='#'>All</a></li>
+<li><a href='/betareaders/all/anime/'>Anime</a></li>
+<li><a href='/betareaders/all/book/'>Books</a></li>
+<li><a href='/betareaders/all/cartoon/'>Cartoons</a></li>
+<li><a href='/betareaders/all/comic/'>Comics</a></li>
+<li><a href='/betareaders/all/game/'>Games</a></li>
+<li><a href='/betareaders/all/misc/'>Misc</a></li>
+<li><a href='/betareaders/all/play/'>Plays</a></li>
+<li><a href='/betareaders/all/movie/'>Movies</a></li>
+<li><a href='/betareaders/all/tv/'>TV</a></li>
+<li class='disabled' style='text-align:center'><a href='#'>Specific</a></li>
+<li><a href='/betareaders/anime/'>Anime</a></li>
+<li><a href='/betareaders/book/'>Books</a></li>
+<li><a href='/betareaders/cartoon/'>Cartoons</a></li>
+<li><a href='/betareaders/comic/'>Comics</a></li>
+<li><a href='/betareaders/game/'>Games</a></li>
+<li><a href='/betareaders/misc/'>Misc</a></li>
+<li><a href='/betareaders/play/'>Plays</a></li>
+<li><a href='/betareaders/movie/'>Movies</a></li>
+<li><a href='/betareaders/tv/'>TV</a></li>
+</ul>
+</div>
+</td>
+<td valign=middle>
+<script>
+                $(document).ready(function() {
+                    $('.xdrop_search').click(function() {
+                        var v = $(this).html();;
+
+                        $('#search_type').val(v.toLowerCase());
+                        $('#search_head').html(v);
+                    });
+
+                    $('#search_keywords').onEnterKey(function(){
+                        $('form#search_form').submit();
+                    });
+
+                });
+
+            </script>
+<FORM method=get id=search_form action='/search/' class='pull-right'>
+<div class='input-prepend'>
+<div class='btn-group'>
+<button class='btn dropdown-toggle' data-toggle='dropdown'>
+<span id=search_head>Story</span>
+<span class='caret'></span>
+</button>
+<ul class='dropdown-menu'>
+<li><a href='#' class=xdrop_search>Story</a></li>
+<li><a href='#' class=xdrop_search>Writer</a></li>
+<li><a href='#' class=xdrop_search>Forum</a></li>
+
+<li><a href='#' class=xdrop_search>Community</a></li>
+</ul>
+</div>
+<input class='span2' name='keywords' id=search_keywords type='text' placeholder='Search' title='Search'>
+
+</div>
+
+<input type=hidden name=ready value=1>
+<input type=hidden name=type id=search_type value=story>
+</FORM>
+</td>
+</tr>
+</table>
+</span>
+    </div>
+</div>
+<div style='width:100%;' class=xcontrast_outer id=content_parent><div class='xcontrast maxwidth' id=content_wrapper style='background-color: white;'><div id=content_wrapper_inner style='padding:0.5em;'><style style='text/css'>
+    .topnav {
+        width: 160px;
+        padding: 40px 28px 25px 0;
+        border-right:1px silver solid;
+
+    }
+
+    ul.topnav {
+        padding: 0;
+        margin: 0;
+
+
+        list-style: none;
+    }
+
+    ul.topnav li { list-style-type: none;}
+
+    ul.topnav li a {
+
+        padding: 10px 5px;
+        color: #000;
+        display: block;
+        text-decoration: none;
+        /* font-weight: bold; */
+    }
+
+    ul.topnav li a:hover {
+        background-color:#675C7C;
+        color:white;
+    }
+
+    ul.topnav ul {
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+
+    ul.topnav ul li {
+        margin: 0;
+        padding: 0;
+        clear: both;
+    }
+
+    ul.topnav ul li a {
+        padding-left: 15px;
+        font-size:0.9em;
+        outline:0;
+    }
+
+    ul.topnav ul li a:hover,  ul.topnav ul li.active{
+        background-color:#D6EEFF;
+        color:black;
+    }
+
+    ul.topnav ul ul li a {
+
+        padding-left: 30px;
+        font-size:0.9em;
+    }
+
+    ul.topnav ul ul li a:hover {
+        background-color:#D3CEB8;
+        color:black;
+    }
+
+    ul.topnav span{
+        float:right;
+    }
+
+</style>
+    <script>
+
+        //plugin definition
+        (function($){
+            $.fn.extend({
+
+                //pass the options variable to the function
+                accordion: function(options) {
+
+                    var defaults = {
+                        accordion: 'true',
+                        speed: 300,
+                        closedSign: '+',
+                        openedSign: '-'
+                    };
+
+                    // Extend our default options with those provided.
+                    var opts = $.extend(defaults, options);
+                    //Assign current element to variable, in this case is UL element
+                    var $this = $(this);
+
+                    //add a mark [+] to a multilevel menu
+                    $this.find('li').each(function() {
+                        if($(this).find('ul').size() != 0){
+                            //add the multilevel sign next to the link
+                            $(this).find('a:first').append('<span>'+ opts.closedSign +'</span>');
+
+                            //avoid jumping to the top of the page when the href is an #
+                            if($(this).find('a:first').prop('href') == '#'){
+                                $(this).find('a:first').click(function(){return false;});
+                            }
+                        }
+                    });
+
+                    //open active level
+                    $this.find('li.active').each(function() {
+                        $(this).parents('ul').slideDown(opts.speed);
+                        $(this).parents('ul').parent('li').find('span:first').html(opts.openedSign);
+                    });
+
+                    $this.find('li a').click(function() {
+                        if($(this).parent().find('ul').size() != 0){
+                            if(opts.accordion){
+                                //Do nothing when the list is open
+                                if(!$(this).parent().find('ul').is(':visible')){
+                                    var parents = $(this).parent().parents('ul');
+                                    var visible = $this.find('ul:visible');
+                                    visible.each(function(visibleIndex){
+                                        var close = true;
+                                        parents.each(function(parentIndex){
+                                            if(parents[parentIndex] == visible[visibleIndex]){
+                                                close = false;
+                                                return false;
+                                            }
+                                        });
+                                        if(close){
+                                            if($(this).parent().find('ul') != visible[visibleIndex]){
+                                                $(visible[visibleIndex]).slideUp(opts.speed, function(){
+                                                    $(this).parent('li').find('span:first').html(opts.closedSign);
+                                                });
+
+                                            }
+                                        }
+                                    });
+                                }
+
+                            }
+                            if($(this).parent().find('ul:first').is(':visible')){
+                                $(this).parent().find('ul:first').slideUp(opts.speed, function(){
+                                    $(this).parent('li').find('span:first').delay(opts.speed).html(opts.closedSign);
+                                });
+
+                            }
+                            else{
+
+                                $(this).parent().find('ul:first').slideDown(opts.speed, function(){
+                                    $(this).parent('li').find('span:first').delay(opts.speed).html(opts.openedSign);
+                                });
+                            }
+                        }
+                    });
+                }
+            });
+        })(jQuery);
+    </script>
+    <script>
+
+        $(document).ready(function() {
+            $('.topnav').accordion({
+                accordion:true
+
+            });
+        });
+
+    </script>
+    <table width='100%'>
+        <tr><td colspan=2><style>
+            .panel_error {
+                background: #F6F7EE; /* #EFEFEF; */
+                color: #000000;
+                padding: 10px;
+                border: 1px outset;
+                margin-bottom: 5px;
+                text-align:left;
+
+            }
+            .panel_success {
+                background: #F6F7EE; /* #EFEFEF; */
+                color: #000000;
+                padding: 10px;
+                border: 1px outset;
+                margin-bottom: 5px;
+                text-align:left;
+
+            }
+
+            .panel_warning {
+                background: #F6F7EE; /* #EFEFEF; */
+                color: #000000;
+                padding: 10px;
+                border: 1px outset;
+                margin-bottom: 5px;
+                text-align:left;
+
+            }
+            .panel_normal {
+                background: #F6F7EE; /* #EFEFEF; */
+                color: #000000;
+                padding: 10px;
+                border: 1px outset;
+                margin-bottom: 5px;
+                text-align:left;
+
+            }
+
+            .panel_plain {
+                background: #F6F7EE; /* #EFEFEF; */
+                color: #000000;
+                padding: 10px;
+                border: 1px outset;
+                margin-bottom: 5px;
+                text-align:left;
+            }
+
+            .gui_error {
+                color: red;
+            }
+
+            .gui_warning {
+                color: #E56717;
+            }
+
+            .gui_success {
+                color: green;
+            }
+
+            .gui_normal .gui_white {
+
+            }
+
+        </style><div class=panel_normal><span class='gui_normal'>Follow us on twitter <a href='https://twitter.com/fictionpress'>@fictionpress</a> for the latest site news and status updates.</span></div></td></tr>
+        <tr><td valign=top width=1% style='padding-right:5px;'>
+            <ul class='topnav'>
+                <li><a href='#' class=underline>Account</a>
+                    <ul>
+                        <li><a href='/account/settings.php' class=underline>- Settings</a></li>
+                        <li><a href='/account/profile.php' class=underline>- Profile</a></li>
+                        <li><a href='/account/blocks.php' class=underline>- Block Users</a></li>
+                        <li><a href='/account/backup_emails.php' class=underline>- Backup Emails</a></li>
+                        <li><a href='/account/networks.php' class=underline>- Network Accounts</a></li>
+                    </ul>
+                </li>
+                <li><a href='#' class=underline>Publish</a>
+                    <ul>
+                        <li><a href='/story/story_tab_main.php' class=underline>- About</a></li>
+                        <li><a href='/docs/docs.php' class=underline>- Doc Manager</a></li>
+                        <li><a href='/story/story_tab_new_s1.php' class=underline>- New Story</a></li>
+                        <li><a href='/story/story_tab_list.php' class=underline>- Manage Stories</a>
+                        <li><a href='/story/story_tab_guide.php' class=underline>- Rules & Guidelines</a>
+                        <li><a href='/story/story_tab_recovery.php' class=underline>- Recovery</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href='#' class=underline>Private Messaging </a>
+                    <ul>
+                        <li><a href='/pm2/inbox.php' class=underline>- Inbox </a></li>
+                        <li><a href='/pm2/outbox.php' class=underline>- Outbox</a></li>
+                    </ul>
+                </li>
+                <li><a href='#' class=underline>Image Manager</a>
+                    <ul>
+                        <li><a href='/imanager/image_guide.php' class=underline>- About</a></li>
+                        <li><a href='/imanager/image_manager.php' class=underline>- Manage (Upload)</a></li>
+                    </ul>
+                </li>
+                <li><a href='#' class=underline>Alerts</a>
+                    <ul>
+                        <li><a href='/alert/guide.php' class=underline>- About</a></li>
+                        <li><a href='/alert/author.php' class=underline>- Author Alerts</a></li>
+                        <li class=active><a href='/alert/story.php' class=underline>- Story Alerts</a></li>
+                        <li><a href='/alert/community.php' class=underline>- Community Alerts</a></li>
+                    </ul>
+                </li>
+                <li><a href='#' class=underline>Favorites</a>
+                    <ul>
+                        <li><a href='/favorites/guide.php' class=underline>- About</a></li>
+                        <li><a href='/favorites/author.php' class=underline>- Favorite Authors</a></li>
+                        <li><a href='/favorites/story.php' class=underline>- Favorite Stories</a></li>
+                    </ul>
+                </li>
+                <li><a href='#' class=underline>Forums</a>
+                    <ul>
+                        <li><a href='/forum/forums_tab_guide.php'>- About</a></li>
+                        <li><a href='/forum/forums_tab_forums.php'>- My Forums</a></li>
+                        <li><a href='/forum/forums_tab_moderation.php'>- Forum Participation</a></li>
+                    </ul>
+                </li>
+                <li><a href='#' class=underline>Polls</a>
+                    <ul>
+                        <li><a href='/poll/polls_tab_guide.php' class=underline>- About</a></li>
+                        <li><a href='/poll/polls_tab_polls.php' class=underline>- Polls</a></li>
+                    </ul>
+                </li>
+                <li><a href='#' class=underline>Reviews</a>
+                    <ul>
+                        <li><a href='/reviews/guide.php' class=underline>- About</a></li>
+                        <li><a href='/reviews/moderate.php' class=underline>- Moderate Reviews</a></li>
+                        <li><a href='/reviews/history.php' class=underline>- Review History</a></li>
+                        <li><a href='/reviews/delete.php' class=underline>- Remove Review</a></li>
+                    </ul>
+                </li>
+                <li><a href='#' class=underline>Beta Reader</a>
+                    <ul>
+                        <li><a href='/beta/guide.php' class=underline>- About</a></li>
+                        <li><a href='/beta/profile.php' class=underline>- Beta Profile</a></li>
+                        <li><a href='/beta/preference.php' class=underline>- Beta Preferences</a></li>
+                    </ul>
+                </li>
+                <li><a href='#' class=underline>DocX</a>
+                    <ul>
+                        <li><a href='/docx/guide.php' class=underline>- About</a></li>
+                        <li><a href='/docx/inbox.php' class=underline>- Inbox</a></li>
+                        <li><a href='/docx/outbox.php' class=underline>- Outbox</a></li>
+                        <li><a href='/docx/connects.php' class=underline>- Connections</a></li>
+                    </ul>
+                </li>
+                <li><a href='#' class=underline>Community</a>
+                    <ul>
+                        <li><a>Manager</a>
+                            <ul>
+                                <li><a href='/community/c2m_tab_main.php' class=underline>- About</a></li>
+                                <li><a href='/community/c2m_tab_edit.php' class=underline>- Create/Edit</a></li>
+                                <li><a href='/community/c2m_tab_staff.php' class=underline>- My Staff</a></li>
+                                <li><a href='/community/c2m_tab_story.php' class=underline>- Archive</a></li>
+                                <li><a href='/community/c2m_tab_stats.php' class=underline>- Stats</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Staff</a>
+                            <ul>
+                                <li><a href='/community/c2s_tab_main.php' class=underline>- About</a></li>
+                                <li><a href='/community/c2s_tab_staff.php' class=underline>- My Communities</a></li>
+                                <li><a href='/community/c2s_tab_story.php' class=underline>- My Contributions</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href='#' class=underline>Traffic Stats</a>
+                    <ul>
+                        <li><a href='/stats/story_eyes.php' class=underline>- Story Stats</a></li>
+                        <li><a href='/stats/story_eyes_profile.php' class=underline>- Profile Stats</a></li>
+                        <li><a href='/stats/forum_eyes.php' class=underline>- Forum Stats</a></li>
+                        <li><a href='/stats/community_eyes.php' class=underline>- Community Stats</a></li>
+                        <li><a href='/stats/story.php' class=underline>- Legacy Story Stats </a></li>
+                        <li><a href='/stats/user.php' class=underline>- Legacy User Stats </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+            <td valign=top>
+                <div class=myborder_only_bottom>
+                    <div class=top_bottom_buffer>
+                        <FONT COLOR="RED">
+                            <div id="errors"></div>
+                        </FONT>
+                        <form method=post style='padding:0px;margin:0px;'>
+                            <input type=text name=storyid size=30 required placeholder="Enter storyid">
+                            <button type=submit class='btn'>Add</button>
+                            <input type=hidden name=action value=add>
+                        </form>
+                    </div>
+                </div>
+                <div class=myborder_only_bottom>
+                    <div class=top_bottom_buffer>
+                        <a href='?action=import' onClick="return confirm('Are you sure you want to import all your favorite stories into the story alert watch list?');">Import
+                            Stories from My Favorites</a>
+                    </div>
+                </div>
+                <div style='margin:5px 0 5px 0;text-align:right;'>
+                    <form method=get action='?'>
+                        <select id=sorter name=sort>
+                            <option value='update'>Sort by Story Update Date
+                            <option value='added'>Sort by Date Added
+                            <option value='title'>Sort by Story Title
+                        </select>
+                        <select id=categoryid name=categoryid>
+                            <option value=0>Category Filter: All
+                            <option value=11015>A Certain Scientific Railgun/とある科学の超電磁砲<option value=72>Aliens/Predator<option value=2022>American Dragon: Jake Long<option value=1244>Artemis Fowl<option value=9786>Avengers<option value=1776>Danny Phantom<option value=83>Dragon Ball Z<option value=2924>Fairy Tail<option value=10009>Gravity Falls<option value=599>Half-Life<option value=1342>Halo<option value=224>Harry Potter<option value=3651>Hobbit<option value=6524>How to Train Your Dragon<option value=1992>Inheritance Cycle<option value=1111>Lion King<option value=382>Lord of the Rings<option value=357>Marvel<option value=2927>Mass Effect<option value=542>Metroid<option value=1381>Monsters Inc.<option value=1402>Naruto<option value=80>Pokémon<option value=68>Stargate: SG-1<option value=7>StarTrek: The Next Generation<option value=8>Star Wars<option value=3130>Temeraire<option value=424>X-Com<option value=12814>Zootopia
+                        </select>
+                        <select id=userid name=userid>
+                            <option value=0>Author Filter: All
+                            <option value=1684724>Agailius<option value=1057252>Agayek<option value=731970>aglondier<option value=325962>Agnostics Puppet<option value=5039505>AirFireWaterEarth<option value=5505626>AlexDnD<option value=326251>Alex Ultra<option value=7760152>All Hail King Scar<option value=838165>AlysiaStorms<option value=2222047>AnarchicMuse<option value=717542>AngelaStarCat<option value=3613264>Angelbloodlover<option value=2335581>Angeldoctor<option value=5517928>Anonymity is crucial<option value=7484374>Apollonir<option value=3243414>apple2011<option value=4297919>Aqualisa1995<option value=1186800>Arashi the Solar Phoenix<option value=6472275>AthanatosOra<option value=5450286>BackslashEcho<option value=365582>Banana Flavored Eskimo<option value=4737879>bigfan22<option value=6667990>blackbelt256<option value=2965035>bleubirdsong<option value=1093982>blue artemis<option value=4735176>Blueavatar<option value=1201799>Blueowl<option value=4934632>brainthief<option value=6116622>Calvariam Hedum<option value=5883947>Camolot the Creator<option value=1347642>Cevaztyen<option value=1060901>chibifurby<option value=4109427>Contramancer<option value=1121841>cosette-aimee<option value=2125102>Count Anarchy<option value=921301>Crazy-88<option value=4226346>Crazybuu<option value=4309541>creamofwheat2311<option value=3841564>CreatorZorah<option value=33563>Crunchysunrises<option value=1911093>Crystalzap<option value=4424268>cxjenious<option value=2042977>cywsaphyre<option value=3488069>d1x1lady<option value=6353707>Dante Kreisler<option value=4310240>darkfire1220<option value=3345488>DarkFoxKit<option value=2697189>Darkpetal16<option value=4575841>DarkScales<option value=944398>Darth Malleus<option value=7108591>DaSalvatore<option value=1156781>Daystar Clarion<option value=5085752>DeLacus<option value=1028106>demonicnargles<option value=1679315>DerLaCroix<option value=8393662>Detsella Morningdew<option value=1077111>DobbyElfLord<option value=2276694>Dolosus Vipereus<option value=4774853>DONOVAN94<option value=1016618>DragonWolfStar<option value=2036266>DriftWood1965<option value=4568755>Duesal Bladesinger<option value=4707996>Ebenbild<option value=8013172>ElegantlyDone<option value=4636640>EmptySurface<option value=6951116>EndoplasmicPanda<option value=5555081>epsi10n<option value=5374016>erimies<option value=2852289>Eterna1Soldier<option value=865461>EverD<option value=4815698>evevee<option value=1613285>FairyTails13<option value=2891133>FallenQueen2<option value=3713666>fan-xover<option value=7091974>flowerchild33<option value=3196486>Forthwith16<option value=1176302>Fragmented Disillusionment<option value=5671642>FreedomOfThinking<option value=412262>fullsailnate<option value=1186762>fuzzy-christmas-socks<option value=10746004>GADPELLAEON<option value=2979897>Gamerfan411<option value=11062375>GraeFoxx<option value=13354669>grumpywolf<option value=8452656>GunnyStacker<option value=1573117>Gyokuyou-no-Kuugen<option value=5193465>HeirOfRohan<option value=3389316>HermiHugs<option value=2944099>Hubris Plus<option value=2723055>IcecreamSyndrome<option value=2088474>ImmemorialMemory<option value=3488110>In caverns dark<option value=2037398>Irish216<option value=4178520>Izaranna<option value=2740971>Izzyaro<option value=6249085>James Wright<option value=3098177>JellyBabe02<option value=6217067>Jetainia<option value=6132825>joen1801<option value=5834938>jokergirl2001<option value=1639602>Jonesycat79<option value=8385377>justhobby<option value=8185014>karloss999<option value=4404355>kathryn518<option value=6679307>Kelial<option value=5886025>Kilpikonna<option value=1617744>Kira Kyuu<option value=2823966>Kythorian<option value=2052386>Laabsinthi<option value=7091201>Lady Crimson and Black<option value=909525>laer ear<option value=2269863>Less Wrong<option value=2199521>LilaKatze<option value=682777>LittleDragonOfTruth<option value=1889067>Lucy's Dreamland<option value=2740100>Lunabell Marauder Knyte<option value=1850418>lunerwerewolf<option value=2045639>Lynse<option value=722060>Madd Girl<option value=435973>made.of.bees<option value=6506652>Maersikai<option value=2420363>Manascript<option value=389478>Marz1<option value=3405770>Masterdude21<option value=2429343>Master of The Blood Wolves<option value=5535191>Mewrlise<option value=1282867>mjimeyg<option value=1221019>Moonlite Knight<option value=4666663>Moonshine Wanderer<option value=2690239>Morta's Priest<option value=5740382>Mortaegus<option value=1510989>muggledad<option value=800378>Naga's Shadow<option value=3004737>Nauro<option value=3549474>NinjaRiderWriter<option value=2641075>Nocte Furorem<option value=2843107>NooShoak<option value=2317158>Oceanbreeze7<option value=1156307>Omniscientearl<option value=1912967>PenguinBandit523<option value=403542>Perivayne<option value=867598>Phantom Feline<option value=4513622>Pibbinator<option value=1408784>Primordial Vortex<option value=845976>PristinelyUngifted<option value=6547066>PseudoSim<option value=4546015>Queen Flara<option value=4616147>Raiju Tsuiga<option value=1056673>ranDum InSanity<option value=2253612>Rathanel<option value=3946215>Respite88<option value=1831636>RhiannanT<option value=989454>rianess<option value=2904027>rightforlife<option value=1451358>RobSt<option value=884184>S'TarKan<option value=1668784>Sage1988<option value=912889>sakurademonalchemist<option value=4274083>SamusOlderBrother<option value=2996114>Saphroneth<option value=3414810>savya398<option value=879553>Shaded Skies<option value=345356>ShadowHunter Mashell<option value=1818322>shadowsdeep<option value=2345283>Shadythief<option value=5869599>ShayaLonnie<option value=6364223>ShiiroiKitsune21<option value=1824571>Silverfawkes<option value=315314>Silver Queen<option value=4329413>Sinyk<option value=3444673>SlateWalker<option value=5338368>SpiralAK<option value=5643202>Stargon1<option value=5291694>Steelbadger<option value=8683300>StorytellerNew<option value=2668930>Superbun<option value=8291327>supertruckin<option value=1199189>Systatic<option value=745277>Sythe<option value=5478583>TalesofErynGalen<option value=6181192>Tempestas D. Uzu<option value=5667568>The Grim Overlord<option value=4902378>The Imperator 2 you<option value=2009883>The Last Dragonite<option value=1494340>TheMadDalek<option value=5332393>TheMaddogMerc<option value=699762>The Mad Mad Reviewer<option value=1909393>ThetaWolfe<option value=6994040>Thewackness135<option value=4245482>This is not a FanFiction<option value=739513>Tragic Melpomene<option value=2221413>Tsume Yuki<option value=2641449>UH-60 NIGHTSTALKER<option value=1585972>Uncle Stojil<option value=5681283>UnderneathXtheXunderneath<option value=7047344>upplet<option value=620686>Vaengir<option value=670787>Vance McGill<option value=77482>Vathara<option value=5568669>War Cry's<option value=1838731>WarlordFil<option value=1782776>WarriorArnelle<option value=315488>Whispering Darkness<option value=5339762>White Squirrel<option value=2016872>whitetigerwolf<option value=4773043>WhoAskedYou<option value=5192205>wille179<option value=252289>Willowfan<option value=108887>Wingwyrm<option value=983103>witowsmp<option value=1331515>WizardsGirl<option value=4674022>worldtravellingfly<option value=2214591>Xejis<option value=8307188>Zanrok<option value=2324835>Zombie Cat Scientist<option value=1024437>Zyachta
+                        </select>
+                        <button type=submit class='btn'>Apply</button>
+                    </form>
+                </div><form method=post action='?'><input type=hidden name=action value='remove-multi'><div style='width:100%;text-align:left;' class='table-bordered'><div class='tcat' style='border-left:1px solid #ddd;'><b>Stories you are following (250)</b></div><table class='table   table-hover ' width='100%' cellpadding='4' id='gui_table1i'><thead style='border-top: 1px solid #dddddd;'><tr>
+                <th class='thead' align='left'>Story</th>
+                <th class='thead' align='left'>Author</th>
+                <th class='thead' align='left'>Category</th>
+                <th class='thead' align='left'>Updated</th>
+                <th class='thead' align='left'>Alert Added</th>
+                <th class='thead' align='left'></th></tr></thead>
+                <tbody><tr>
+                    <td><a href='/s/13714539/1/Caterpillar' target='_new'>Caterpillar</a></td>
+                    <td><a href='/u/13354669/grumpywolf' target='_new'>grumpywolf</a></td>
+                    <td>Naruto</td>
+                    <td>02-05-2021</td>
+                    <td>01-21-2021</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=13714539></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/11503873/1/Broken-Reflection' target='_new'>Broken Reflection</a></td>
+                    <td><a href='/u/2214591/Xejis' target='_new'>Xejis</a></td>
+                    <td>Naruto</td>
+                    <td>01-17-2021</td>
+                    <td>12-01-2020</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=11503873></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/13230340/1/Harry-Is-A-Dragon-And-That-s-Okay' target='_new'>Harry Is A Dragon, And That's Okay</a></td>
+                    <td><a href='/u/2996114/Saphroneth' target='_new'>Saphroneth</a></td>
+                    <td>Harry Potter</td>
+                    <td>01-12-2021</td>
+                    <td>08-11-2019</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=13230340></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/8550820/1/Strange-Visitors-From-Another-Century' target='_new'>Strange Visitors From Another Century</a></td>
+                    <td><a href='/u/2740971/Izzyaro' target='_new'>Izzyaro</a></td>
+                    <td>Harry Potter</td>
+                    <td>01-11-2021</td>
+                    <td>05-08-2018</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=8550820></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/13564410/1/Kurama-Sensei' target='_new'>Kurama Sensei</a></td>
+                    <td><a href='/u/8393662/Detsella-Morningdew' target='_new'>Detsella Morningdew</a></td>
+                    <td>Naruto</td>
+                    <td>01-09-2021</td>
+                    <td>06-24-2020</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=13564410></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/6595319/1/The-Human-Species' target='_new'>The Human Species</a></td>
+                    <td><a href='/u/879553/Shaded-Skies' target='_new'>Shaded Skies</a></td>
+                    <td>Pokémon</td>
+                    <td>12-27-2020</td>
+                    <td>01-31-2019</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=6595319></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/11115934/1/The-Shadow-of-Angmar' target='_new'>The Shadow of Angmar</a></td>
+                    <td><a href='/u/5291694/Steelbadger' target='_new'>Steelbadger</a></td>
+                    <td>Harry Potter</td>
+                    <td>12-25-2020</td>
+                    <td>02-02-2021</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=11115934></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/10709411/1/Basilisk-born' target='_new'>Basilisk-born</a></td>
+                    <td><a href='/u/4707996/Ebenbild' target='_new'>Ebenbild</a></td>
+                    <td>Harry Potter</td>
+                    <td>12-24-2020</td>
+                    <td>09-07-2019</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=10709411></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/9751536/1/To-Infinity' target='_new'>To Infinity</a></td>
+                    <td><a href='/u/4309541/creamofwheat2311' target='_new'>creamofwheat2311</a></td>
+                    <td>Halo</td>
+                    <td>12-20-2020</td>
+                    <td>05-01-2018</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=9751536></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/12694730/1/Whirlwind' target='_new'>Whirlwind</a></td>
+                    <td><a href='/u/2045639/Lynse' target='_new'>Lynse</a></td>
+                    <td>Danny Phantom</td>
+                    <td>12-19-2020</td>
+                    <td>06-01-2020</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=12694730></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/12088294/1/Animagus-at-War' target='_new'>Animagus at War</a></td>
+                    <td><a href='/u/5339762/White-Squirrel' target='_new'>White Squirrel</a></td>
+                    <td>Harry Potter</td>
+                    <td>12-12-2020</td>
+                    <td>07-29-2018</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=12088294></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/9467566/1/Harry-Potter-and-the-Banished-Monster' target='_new'>Harry Potter and the Banished Monster</a></td>
+                    <td><a href='/u/1912967/PenguinBandit523' target='_new'>PenguinBandit523</a></td>
+                    <td>Harry Potter</td>
+                    <td>12-10-2020</td>
+                    <td>05-05-2018</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=9467566></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/3315493/1/A-Whole-New-World' target='_new'>A Whole New World</a></td>
+                    <td><a href='/u/1186762/fuzzy-christmas-socks' target='_new'>fuzzy-christmas-socks</a></td>
+                    <td>Harry Potter</td>
+                    <td>12-09-2020</td>
+                    <td>04-13-2020</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=3315493></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/5664828/1/Harry-Potter-and-Future-s-Past' target='_new'>Harry Potter and Future's Past</a></td>
+                    <td><a href='/u/2036266/DriftWood1965' target='_new'>DriftWood1965</a></td>
+                    <td>Harry Potter</td>
+                    <td>11-25-2020</td>
+                    <td>04-20-2018</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=5664828></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/11836114/1/When-Instinct-Falls' target='_new'>When Instinct Falls</a></td>
+                    <td><a href='/u/7047344/upplet' target='_new'>upplet</a></td>
+                    <td>Zootopia</td>
+                    <td>11-06-2020</td>
+                    <td>03-05-2019</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=11836114></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/12030727/1/Book-one-of-Thunder-God-Series-Rise' target='_new'>Book one of Thunder God Series: Rise</a></td>
+                    <td><a href='/u/1494340/TheMadDalek' target='_new'>TheMadDalek</a></td>
+                    <td>Harry Potter</td>
+                    <td>10-14-2020</td>
+                    <td>02-02-2020</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=12030727></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/11993680/1/American-Dragon-The-Third-Evanescence' target='_new'>American Dragon: The Third Evanescence</a></td>
+                    <td><a href='/u/6249085/James-Wright' target='_new'>James Wright</a></td>
+                    <td>American Dragon: Jake Long</td>
+                    <td>10-06-2020</td>
+                    <td>06-03-2020</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=11993680></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/12377197/1/On-the-Illusion-of-Might' target='_new'>On the Illusion of Might</a></td>
+                    <td><a href='/u/4815698/evevee' target='_new'>evevee</a></td>
+                    <td>Halo</td>
+                    <td>09-30-2020</td>
+                    <td>01-20-2020</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=12377197></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/10905401/1/Praeludium-and-Allegro' target='_new'>Praeludium and Allegro</a></td>
+                    <td><a href='/u/6353707/Dante-Kreisler' target='_new'>Dante Kreisler</a></td>
+                    <td>Naruto</td>
+                    <td>09-13-2020</td>
+                    <td>01-02-2018</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=10905401></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/12555868/1/The-Lost-Civilization' target='_new'>The Lost Civilization</a></td>
+                    <td><a href='/u/7484374/Apollonir' target='_new'>Apollonir</a></td>
+                    <td>Halo</td>
+                    <td>08-22-2020</td>
+                    <td>12-07-2019</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=12555868></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/12610360/1/We-Harry-Potter' target='_new'>We, Harry Potter</a></td>
+                    <td><a href='/u/5192205/wille179' target='_new'>wille179</a></td>
+                    <td>Harry Potter</td>
+                    <td>07-02-2020</td>
+                    <td>04-14-2018</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=12610360></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/10571990/1/Nine-Tailed-Possession' target='_new'>Nine Tailed Possession</a></td>
+                    <td><a href='/u/5505626/AlexDnD' target='_new'>AlexDnD</a></td>
+                    <td>Naruto</td>
+                    <td>06-22-2020</td>
+                    <td>01-22-2018</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=10571990></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/10991501/1/Hermione-Granger-and-the-Serpent-s-Renaissance' target='_new'>Hermione Granger and the Serpent's Renaissance</a></td>
+                    <td><a href='/u/5555081/epsi10n' target='_new'>epsi10n</a></td>
+                    <td>Harry Potter</td>
+                    <td>06-06-2020</td>
+                    <td>02-13-2018</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=10991501></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/13529570/1/Drink-Up-Goddess' target='_new'>Drink Up, Goddess!</a></td>
+                    <td><a href='/u/4773043/WhoAskedYou' target='_new'>WhoAskedYou</a></td>
+                    <td>Naruto</td>
+                    <td>05-29-2020</td>
+                    <td>01-20-2021</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=13529570></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/10274217/1/When-Destiny-burns' target='_new'>When Destiny burns</a></td>
+                    <td><a href='/u/3405770/Masterdude21' target='_new'>Masterdude21</a></td>
+                    <td>Halo</td>
+                    <td>05-18-2020</td>
+                    <td>02-25-2020</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=10274217></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/12365777/1/Marvel-s-Maelstrom' target='_new'>Marvel's Maelstrom</a></td>
+                    <td><a href='/u/4513622/Pibbinator' target='_new'>Pibbinator</a></td>
+                    <td>Marvel</td>
+                    <td>05-05-2020</td>
+                    <td>12-07-2019</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=12365777></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/12519346/1/The-Second-XCOM-Viper' target='_new'>The Second XCOM Viper</a></td>
+                    <td><a href='/u/4902378/The-Imperator-2-you' target='_new'>The Imperator 2 you</a></td>
+                    <td>X-Com</td>
+                    <td>05-03-2020</td>
+                    <td>07-07-2019</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=12519346></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/12046450/1/On-Dead-Wings' target='_new'>On Dead Wings</a></td>
+                    <td><a href='/u/2221413/Tsume-Yuki' target='_new'>Tsume Yuki</a></td>
+                    <td>Harry Potter</td>
+                    <td>05-01-2020</td>
+                    <td>08-05-2019</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=12046450></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/13258001/1/Voyage-unto-Infinity' target='_new'>Voyage unto Infinity</a></td>
+                    <td><a href='/u/8291327/supertruckin' target='_new'>supertruckin</a></td>
+                    <td>Mass Effect</td>
+                    <td>02-25-2020</td>
+                    <td>01-15-2020</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=13258001></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/13288326/1/Echoes-of-the-Night' target='_new'>Echoes of the Night</a></td>
+                    <td><a href='/u/2668930/Superbun' target='_new'>Superbun</a></td>
+                    <td>How to Train Your Dragon</td>
+                    <td>02-10-2020</td>
+                    <td>07-07-2019</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=13288326></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/12307781/1/Heroes-Assemble' target='_new'>Heroes Assemble!</a></td>
+                    <td><a href='/u/5643202/Stargon1' target='_new'>Stargon1</a></td>
+                    <td>Harry Potter</td>
+                    <td>02-05-2020</td>
+                    <td>02-02-2021</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=12307781></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/13025350/1/From-Ruin' target='_new'>From Ruin</a></td>
+                    <td><a href='/u/11062375/GraeFoxx' target='_new'>GraeFoxx</a></td>
+                    <td>Harry Potter</td>
+                    <td>01-27-2020</td>
+                    <td>11-20-2020</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=13025350></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/11126659/1/Monster-Falls' target='_new'>Monster Falls</a></td>
+                    <td><a href='/u/4546015/Queen-Flara' target='_new'>Queen Flara</a></td>
+                    <td>Gravity Falls</td>
+                    <td>12-27-2019</td>
+                    <td>12-25-2016</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=11126659></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/10913988/1/Three-s-A-Crowd-But-Pack-Sticks-Together' target='_new'>Three's A Crowd (But Pack Sticks Together)</a></td>
+                    <td><a href='/u/6364223/ShiiroiKitsune21' target='_new'>ShiiroiKitsune21</a></td>
+                    <td>Naruto</td>
+                    <td>12-24-2019</td>
+                    <td>03-24-2019</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=10913988></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/10642894/1/Azuveya-Fury-Oh-Fury' target='_new'>Azuveya: Fury Oh Fury</a></td>
+                    <td><a href='/u/1617744/Kira-Kyuu' target='_new'>Kira Kyuu</a></td>
+                    <td>Harry Potter</td>
+                    <td>12-18-2019</td>
+                    <td>01-08-2020</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=10642894></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/13391615/1/Pack' target='_new'>Pack</a></td>
+                    <td><a href='/u/1282867/mjimeyg' target='_new'>mjimeyg</a></td>
+                    <td>Harry Potter</td>
+                    <td>09-28-2019</td>
+                    <td>09-29-2019</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=13391615></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/13159911/1/For-Earth-and-All-Her-Colonies' target='_new'>For Earth and All Her Colonies</a></td>
+                    <td><a href='/u/10746004/GADPELLAEON' target='_new'>GADPELLAEON</a></td>
+                    <td>Halo</td>
+                    <td>09-13-2019</td>
+                    <td>01-06-2020</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=13159911></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/13323228/1/REPOST-Vox-Corporis-Original-Author-MissAnnThropic-NOT-MY-STORY' target='_new'>REPOST-Vox Corporis : Original Author-MissAnnThropic NOT MY STORY</a></td>
+                    <td><a href='/u/8683300/StorytellerNew' target='_new'>StorytellerNew</a></td>
+                    <td>Harry Potter</td>
+                    <td>09-10-2019</td>
+                    <td>02-02-2021</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=13323228></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/9313254/1/Iryo-nin-Kasa-%E5%8C%BB%E7%99%82%E5%BF%8D%E5%82%98' target='_new'>Iryo-nin Kasa (医療忍傘)</a></td>
+                    <td><a href='/u/620686/Vaengir' target='_new'>Vaengir</a></td>
+                    <td>Naruto</td>
+                    <td>09-03-2019</td>
+                    <td>02-13-2018</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=9313254></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/13217429/1/Something-Beautiful-in-a-Terrible-sort-of-Way' target='_new'>Something Beautiful, in a Terrible sort of Way</a></td>
+                    <td><a href='/u/2221413/Tsume-Yuki' target='_new'>Tsume Yuki</a></td>
+                    <td>Harry Potter</td>
+                    <td>07-24-2019</td>
+                    <td>08-05-2019</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=13217429></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/12579046/1/Towards-the-Sun' target='_new'>Towards the Sun</a></td>
+                    <td><a href='/u/2088474/ImmemorialMemory' target='_new'>ImmemorialMemory</a></td>
+                    <td>Harry Potter</td>
+                    <td>07-20-2019</td>
+                    <td>02-11-2018</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=12579046></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/12482620/1/Heir-of-Destruction' target='_new'>Heir of Destruction</a></td>
+                    <td><a href='/u/6667990/blackbelt256' target='_new'>blackbelt256</a></td>
+                    <td>Dragon Ball Z</td>
+                    <td>06-19-2019</td>
+                    <td>03-17-2020</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=12482620></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/9384607/1/Dragonearth' target='_new'>Dragonearth</a></td>
+                    <td><a href='/u/4310240/darkfire1220' target='_new'>darkfire1220</a></td>
+                    <td>Fairy Tail</td>
+                    <td>06-13-2019</td>
+                    <td>07-05-2018</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=9384607></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/10055817/1/Mass-Effect-The-New-Journey' target='_new'>Mass Effect: The New Journey</a></td>
+                    <td><a href='/u/1186800/Arashi-the-Solar-Phoenix' target='_new'>Arashi the Solar Phoenix</a></td>
+                    <td>Halo</td>
+                    <td>06-11-2019</td>
+                    <td>12-08-2019</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=10055817></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/11169912/1/Shadow-of-the-Night' target='_new'>Shadow of the Night</a></td>
+                    <td><a href='/u/2668930/Superbun' target='_new'>Superbun</a></td>
+                    <td>How to Train Your Dragon</td>
+                    <td>05-17-2019</td>
+                    <td>04-16-2018</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=11169912></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/10863685/1/The-White-Warg' target='_new'>The White Warg</a></td>
+                    <td><a href='/u/5478583/TalesofErynGalen' target='_new'>TalesofErynGalen</a></td>
+                    <td>Harry Potter</td>
+                    <td>04-20-2019</td>
+                    <td>04-22-2018</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=10863685></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/7347955/1/Dreaming-of-Sunshine' target='_new'>Dreaming of Sunshine</a></td>
+                    <td><a href='/u/315314/Silver-Queen' target='_new'>Silver Queen</a></td>
+                    <td>Naruto</td>
+                    <td>03-28-2019</td>
+                    <td>06-20-2018</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=7347955></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/12058516/1/The-Reclamation-of-Black-Magic' target='_new'>The Reclamation of Black Magic</a></td>
+                    <td><a href='/u/5869599/ShayaLonnie' target='_new'>ShayaLonnie</a></td>
+                    <td>Harry Potter</td>
+                    <td>03-14-2019</td>
+                    <td>02-04-2019</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=12058516></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/13229284/1/The-Light-Beneath-the-Waves' target='_new'>The Light Beneath the Waves</a></td>
+                    <td><a href='/u/2668930/Superbun' target='_new'>Superbun</a></td>
+                    <td>How to Train Your Dragon</td>
+                    <td>03-09-2019</td>
+                    <td>07-07-2019</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=13229284></td>
+                </tr>
+                <tr>
+                    <td><a href='/s/12562750/1/The-Incredible-Babysitter' target='_new'>The Incredible Babysitter</a></td>
+                    <td><a href='/u/4297919/Aqualisa1995' target='_new'>Aqualisa1995</a></td>
+                    <td>Harry Potter</td>
+                    <td>02-26-2019</td>
+                    <td>03-03-2019</td>
+                    <td width=1% align=center><input type=checkbox name=rids[] value=12562750></td>
+                </tr>
+                <tr>
+                    <td colspan=6><button type=submit class='btn pull-right'>Delete</button></td>
+                </tr>
+                </tbody></table></div>
+
+            </form><center style='margin-top:8px;margin-bottom:8px;'>Page <b>1</b> <a href='story.php?sort=&categoryid=0&userid=0&p=2'>2</a> <a href='story.php?sort=&categoryid=0&userid=0&p=3'>3</a> <a href='story.php?sort=&categoryid=0&userid=0&p=4'>4</a> .. <a href='story.php?sort=&categoryid=0&userid=0&p=5'>Last</a> <a href='story.php?sort=&categoryid=0&userid=0&p=2'>Next &#187;</a></center></div></div></div>
+</td>
+</tr>
+</table><div id=p_footer class=maxwidth style='clear:all;padding:1em 0 1em 0;'><div style='text-align:center'><a href='/support/'>Help</a> . <a href='/cookies/'>Cookies</a> . <a href='/privacy/'>Privacy</a> . <a href='/tos/'>Terms of Service</a> . <a href='#top'>Top</a></div><div style='height:10px'></div><div style='text-align:center'><a href='//www.twitter.com/fictionpress'><span class='icon-twitter-3' style='color:rgb(104, 100, 100);font-size:18px;height:20px;width:20px;'></span></a></div><div style='height:15px'></div></div>
+<script>
+    $(function() {
+        $('img.lazy').lazyload({
+            //skip_invisible : false
+        });
+    });
+</script>
+<style>
+    .hv_center {
+        bottom: 0px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        height: 55px;
+        background-color: #363636;
+        color: #e4e4e4;
+
+        /* IE 10 */
+        display:-ms-flexbox;
+        -ms-flex-pack:center;
+        -ms-flex-align:center;
+
+        /* FF */
+        display:-moz-box;
+        -moz-box-pack:center;
+        -moz-box-align:center;
+
+        /* Safari, Opera, and Chrome */
+        display:-webkit-box;
+        -webkit-box-pack:center;
+        -webkit-box-align:center;
+    }
+
+    #cookie_notice {
+        font-size: 0.9em;
+    }
+    #cookie_notice a:link,
+    #cookie_notice a:hover,
+    #cookie_notice a:active,
+    #cookie_notice a:visited {
+        color: #e4e4e4;
+        text-decoration: underline;
+    }
+</style>
+<script>
+    var _cookie_policy = 'cookies';
+
+    //cookie functions
+    function _sCookieGet(cookieName) {
+        var theCookie=""+document.cookie;
+        var ind=theCookie.indexOf(cookieName);
+        if (ind==-1 || cookieName=="") return false;
+        var ind1=theCookie.indexOf(';',ind);
+        if (ind1==-1) ind1=theCookie.length;
+        return unescape(theCookie.substring(ind+cookieName.length+1,ind1));
+    };
+    function _sCookieSet(NameOfCookie, value, expirehours, path, domain) {
+        if(!path)  path = "/";
+        var ExpireDate = new Date ();
+        ExpireDate.setTime(ExpireDate.getTime() + (expirehours * 3600 * 1000));
+        document.cookie = NameOfCookie + "=" + escape(value) + (!expirehours ? "" : "; expires=" + ExpireDate.toGMTString()) + "; path="+path+";" +(!domain ? "" : "domain=" + domain + ";");
+    };
+
+    function _cookieAccept() {
+        _sCookieSet(_cookie_policy,'yes',365 * 24,'/');
+        document.getElementById('cookie_notice').style.display = 'none';
+    }
+
+    var c = _sCookieGet(_cookie_policy)
+
+    if(c != "yes") {
+        document.write("<div id='cookie_notice' class='hv_center'>" +
+            "    <div style='padding-left:50px;padding-right:50px'>" +
+            "        <table>" +
+            "            <tr>" +
+            "                <td> We use cookies. By using our services, you acknowledge that you have read and accept our <a href='/cookies/'>Cookies</a> & <a href='/privacy/'>Privacy</a> Policies.</td>" +
+            "                <td><div style='border:1px whitesmoke solid;padding:5px;margin-left:10px;cursor: pointer;' onClick='_cookieAccept()'>Accept</div></td>" +
+            "            </tr>" +
+            "        </table>" +
+            "    </div>" +
+            "</div>");
+    }
+</script>
+</body></html>

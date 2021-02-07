@@ -1,59 +1,58 @@
-import { Story } from "./model";
-import Chapter from "./model/chapter";
+import { Chapter, Story } from "./model";
 
-interface ParseOptions {
+export const DEFAULT_GENRES = [
+  "General",
+  "Romance",
+  "Humor",
+  "Drama",
+  "Poetry",
+  "Action",
+  "Adventure",
+  "Mystery",
+  "Horror",
+  "Parody",
+  "Angst",
+  "Supernatural",
+  "Suspense",
+  "Sci-Fi",
+  "Fantasy",
+  "Spiritual",
+  "Tragedy",
+  "Western",
+  "Crime",
+  "Family",
+  "Hurt",
+  "Comfort",
+  "Friendship",
+];
+
+export interface StoryParseOptions {
   genres: string[];
   createTemplate: () => HTMLTemplateElement;
 }
 
-function parseProfile(
+export default async function parseStory(
   document?: Document | DocumentFragment,
-  options?: Partial<ParseOptions>
-): Story {
+  options?: Partial<StoryParseOptions>
+): Promise<Story | undefined> {
   const doc = document ?? window.document;
-  const opts: ParseOptions = {
-    genres: options?.genres ?? [
-      "General",
-      "Romance",
-      "Humor",
-      "Drama",
-      "Poetry",
-      "Action",
-      "Adventure",
-      "Mystery",
-      "Horror",
-      "Parody",
-      "Angst",
-      "Supernatural",
-      "Suspense",
-      "Sci-Fi",
-      "Fantasy",
-      "Spiritual",
-      "Tragedy",
-      "Western",
-      "Crime",
-      "Family",
-      "Hurt",
-      "Comfort",
-      "Friendship",
-    ],
-    createTemplate:
-      options?.createTemplate ??
-      (() => {
-        if ((doc as Document).createElement != null) {
-          return (doc as Document).createElement("template");
-        }
-
-        return window.document.createElement("template");
-      }),
+  const opts: StoryParseOptions = {
+    genres: DEFAULT_GENRES,
+    createTemplate() {
+      if ("createElement" in doc) {
+        return doc.createElement("template");
+      }
+      return window.document.createElement("template");
+    },
+    ...options,
   };
 
   const profileElement = doc.getElementById("profile_top");
   const chapterElement = doc.getElementById("chap_select");
-  const breadCrumbElement = doc.getElementById("pre_story_links");
+  const breadcrumbElement = doc.getElementById("pre_story_links");
 
   if (!profileElement) {
-    throw new Error("Profile element not found, cannot parse story info.");
+    return undefined;
   }
 
   let offset = 0;
@@ -78,8 +77,8 @@ function parseProfile(
     }
   }
 
-  if (breadCrumbElement) {
-    const universeLink = breadCrumbElement.querySelector(
+  if (breadcrumbElement) {
+    const universeLink = breadcrumbElement.querySelector(
       "span :last-child"
     ) as HTMLAnchorElement;
     if (!universeLink.textContent) {
@@ -310,5 +309,3 @@ function parseChapters(storyId: number, selectElement: ParentNode): Chapter[] {
 
   return result;
 }
-
-export default parseProfile;

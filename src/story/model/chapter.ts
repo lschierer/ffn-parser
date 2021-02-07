@@ -1,4 +1,4 @@
 export default interface Chapter {
-    id: number;
-    title: string;
+  id: number;
+  title: string;
 }
