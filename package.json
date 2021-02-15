@@ -1,9 +1,10 @@
 {
   "name": "ffn-parser",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A collection of functions to help parse pages off of FanFiction.net",
   "license": "MIT",
   "author": "Arne 'TigeR' Linck",
+  "repository": "github:amur-tiger/ffn-parser",
   "keywords": [
     "fanfiction",
     "parser"
