@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
     "declaration": true,
+    "declarationMap": true,
     "esModuleInterop": true,
     "strict": true,
     "lib": ["ES2020", "DOM"],
     "module": "ES6",
     "moduleResolution": "Node",
     "outDir": "lib",
+    "sourceMap": true,
     "target": "ES2015"
   },
   "include": ["src/**/*"],
