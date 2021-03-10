@@ -1,1 +1,8 @@
 node_modules
+
+.github
+.idea
+
+src/resources/test-cases
+src/**/*.spec.ts
+lib/**/*.spec.*
