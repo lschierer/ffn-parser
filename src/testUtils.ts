@@ -3,7 +3,7 @@ import { join } from "path";
 import { JSDOM } from "jsdom";
 
 export async function loadResource(name: string): Promise<string> {
-  const file = join(__dirname, "resources", name);
+  const file = join(__dirname, "../resources", name);
   const buffer = await readFile(file);
   return buffer.toString("utf-8");
 }
