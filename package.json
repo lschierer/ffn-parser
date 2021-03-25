@@ -22,7 +22,7 @@
     "build": "run-p build:*",
     "build:esm": "esbuild src/index.ts --bundle --sourcemap --format=esm --outfile=lib/index.esm.js",
     "build:commonjs": "tsc --module commonjs",
-    "build:iife": "esbuild src/index.ts --bundle --sourcemap --minify --format=iife --outfile=lib/index.iife.min.js"
+    "build:iife": "esbuild src/index.ts --bundle --sourcemap --minify --format=iife --global-name=ffnParser --outfile=lib/index.iife.min.js"
   },
   "devDependencies": {
     "@types/jest": "^26.0.20",
