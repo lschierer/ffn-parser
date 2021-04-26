@@ -1,6 +1,6 @@
 {
   "name": "ffn-parser",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A collection of functions to help parse pages off of FanFiction.net",
   "license": "MIT",
   "author": "Arne 'TigeR' Linck",
